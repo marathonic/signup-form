@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="row no-gutters d-flex justify-content-center text-center">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup Form</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="row no-gutters d-flex justify-content-center text-center">
 
-        <div class="col no-gutters">
-            <div class="left-section">
-                <img src="./img/background-img.jpg" id="background-img" alt="a picture of a polaroid camera">
-                <p id="placeholder-name">photo by placeholder name</p>
+            <div class="col no-gutters">
+                <div class="left-section">
+                    <img src="./img/background-img.jpg" id="background-img" alt="a picture of a polaroid camera">
+                <p id="pic-author">photo by <a href="https://unsplash.com/@pedrovitorfotografia">Pedro Silva</a> on <a href="https://unsplash.com/photos/dCYlwyl6GqM">Unsplash</a></p>
                 <p id="arcadia-name">Arcadia</p>
-                    <img src="./img/odin-lined.png" id="odin-logo" alt="the odin project logo">
-            </div>
-        
+                <img src="./img/odin-lined.png" id="odin-logo" alt="the odin project logo">
+                </div>
+                
                 
         </div>
 
@@ -26,45 +26,53 @@
             <div class="right-section">
                 <div id="div-description">
                     <p>This is a real online service, for someone, somewhere...
-                        <br> Believe it!
+                        Believe it! 
+                        <br>I've gotsta get me a Fuji, a Polaroid and an Olympus one day!
                     </p>
+                    <p>I will</p>
                 </div>
                 <div class="div-signup">
-                    <p id="signup-header">LFG!</p>
-                        
-                    <form action="" class="form-signup">
-                        <p>
-                            <label for="first-name">first name</label>
-                            <input type="text" name="given-name" id="first-name">
-                            <label for="last-name">last name</label>
-                            <input type="text" name="surname" id="last-name">
-                        </p>
-                        <p>
-                            <label for="email">email</label>
-                            <input type="text" name="mail" id="email">
-                            
-                            <label for="phone">phone number</label>
-                            <input type="tel" name="phone-number" id="phone">
-                        </p>
-                        <p>
-                            <label for="password">password</label>
-                            <input type="password" name="pw" id="password">
-                            
-                            <label for="password-confirm">confirm password</label>
-                            <input type="password" name="confirm-pw" id="password-confirm">
-                        </p>
+                    
+                    <form method="post" action="" class="form-signup" id="signup-form">
+                        <fieldset>
+                            <legend class="form-legend">LFG</legend>
+                            <p>
+                                <label for="first-name">first name</label>
+                                <input type="text" name="given-name" id="first-name">
+                                <label for="last-name">last name</label>
+                                <input type="text" name="surname" id="last-name">
+                            </p>
+                            <p>
+                                <label for="email">email</label>
+                                <input type="text" name="mail" id="email">
+                                
+                                <label for="phone">phone number</label>
+                                <input type="tel" name="phone-number" id="phone">
+                            </p>
+                            <p>
+                                <label for="password">password</label>
+                                <input type="password" name="pw" id="password" placeholder=" " title="passwords must match" required>
+                                
+                                <label for="password-confirm">confirm password</label>
+                                <input type="password" name="confirm-pw" id="password-confirm" placeholder=" " title="passwords must match" required>
+                            </p>
+                        </fieldset>
                     </form>
                 </div>
-                    <button>Create Account</button>
-                    <span>
-                    Already have an account? <a href="#">Log in</a> 
+                <div class="btn-div">
+
+                    <button type="button" class="btn btn-primary" id="the-button">Create Account</button>
+                    <span id="have-account">
+                        Already have an account? <a href="#">Log in</a> 
                     </span>
+                </div>
                     
             </div>
 
         </div>
-
+        
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
